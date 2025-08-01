@@ -16,15 +16,14 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
-    # Fill background with black
+    # Fill screen with black
     screen.fill((0, 0, 0))
 
-    # Example: draw a white rectangle (maze wall)
-    pygame.draw.rect(screen, (255, 255, 255), (100, 100, 100, 100))
+    # Example: Draw a white square (like maze block)
+    pygame.draw.rect(screen, (255, 255, 255), (100, 100, 50, 50))
 
     # Update the display
     pygame.display.flip()
 
-# Quit Pygame
 pygame.quit()
 sys.exit()
